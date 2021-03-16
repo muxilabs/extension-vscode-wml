@@ -1,0 +1,72 @@
+{
+	"WML Basic template": {
+		"prefix": "<wml>",
+		"body": [
+			"<?xml version=\"1.0\"?>",
+			"<!DOCTYPE wml>",
+			"<wml>",
+				"\t<card id=\"main\" title=\"Main Card\">",
+				"\t</card>",
+			"</wml>"
+		],
+		"description": "Simple WML starting point"
+	},
+	"Icongrid p": {
+		"prefix": "iconp",
+		"body": [
+		"<p mode=\"grid\">",
+			"\t<anchor title=\"Icon1\" accesskey=\"?\">",
+			  "\t\t<img src=\"f:icon1.pwi\"/>",
+			  "\t<go href=\"goTo\">",
+				"\t\t<setvar name=\"\" value=\"\"/>",
+			  "\t</go>",
+			"\t</anchor>",
+		"</p>"
+	  
+		],
+		"description": "Icongrid start p"
+	},	
+	"Icongrid a": {
+		"prefix": "icona",
+		"body": [
+		"<anchor title=\"Icon\" accesskey=\"?\">",
+			"\t\t<img src=\"f:ìcon.pwi\"/>",
+			"\t<go href=\"goTo\">",
+			"\t\t<setvar name=\"\" value=\"\"/>",
+			"\t</go>",
+		"</anchor>"
+		],
+		"description": "Icongrid anchor"
+	},
+	"Idle screen": {
+		"prefix": "idlecard",
+		"body": [
+			"<card id='idle' onuserevent='$script#$func'>",
+				"\t<setvar name='prevCard' value='$lastCard'/>",
+				"\t<form align='center'>",
+			  		"\t\t<br/>$idleMsg",
+				"\t</form>",
+		  	"</card>"
+		],
+		"description": "Basic idle screen"
+	},
+	"Card tag": {
+		"prefix": "<card>",
+		"body": [
+			"<card id=\"\" title=\"\">",
+		  	"</card>"
+		],
+		"description": "WML card"
+	},
+	"Do tag": {
+		"prefix": "<do",
+		"body": [
+		"<do type=\"prev\" label=\"Voltar\">",
+			"\t<go href=\"F:wmlp1.wml#Event\"/>",
+		"</do>"
+
+		]
+	}
+	
+
+}

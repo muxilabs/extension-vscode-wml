@@ -1,0 +1,49 @@
+{
+  "name": "wml",
+  "displayName": "%displayName%",
+	"description": "%description%",
+  "version": "1.0.0",
+  "publisher": "jbamaral",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "wml",
+        "extensions": [
+          ".wml"
+        ],
+        "aliases": [
+          "WML",
+          "wm",
+          "wml",
+          "xwml"
+        ],
+        "mimetypes": [
+          "text/vnd.wap.wml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "wml",
+        "scopeName": "text.wml.basic",
+        "path": "./syntaxes/wml.tmLanguage.json",
+        "embeddedLanguages": {
+          "text.wml": "wml"
+        },
+        "tokenTypes": {
+          "meta.tag string.quoted": "other"
+        }
+      }
+    ],
+    "snippets": [
+      {
+        "language": "wml",
+        "path": "./snippets/wml.snippets.json"
+      }
+    ]
+  }
+}
